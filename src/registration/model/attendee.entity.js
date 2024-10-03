@@ -6,6 +6,6 @@ export class Attendee {
         this.lastName = lastName;
         this.eventId = eventId;
         this.ticketIdentifier = ticketIdentifier;
-        this.checkedInAt = new Date(checkedInAt);
+        this.checkedInAt = checkedInAt;
     }
 }
