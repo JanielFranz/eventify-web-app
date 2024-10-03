@@ -19,7 +19,7 @@ The project is built with Vue 3 Framework, and the following dependencies:
 - Dotenv (https://www.npmjs.com/package/dotenv)
 
 # Information Providers
-- Json Server API (http://localhost:3000/api/v1)
+- Json Server API (http://localhost:3000)
 - Clearbit Logo API (https://clearbit.com/logo)
 
 # Developer Information
