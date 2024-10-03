@@ -14,6 +14,7 @@ export class AttendeesService {
         const data = {
             checkedInAt: newCheckedIn
         }
-        return http.patch(`${this.resourceEndPoint}/${id}`, data)
+
+        return http.patch(`${this.resourceEndPoint}/${id}`, data);
     }
 }
