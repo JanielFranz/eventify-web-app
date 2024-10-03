@@ -7,7 +7,7 @@ Eventify Web App, illustrating UI components with PrimeVue, and API service inte
 - PrimeVue UI components
 - Axios API service integration
 - Vue I18n for localization
-- Fetch news from Json Server 
+- Fetch data from Json Server 
 - Environment variables
 - Routes with Vue Router
 
@@ -19,9 +19,9 @@ The project is built with Vue 3 Framework, and the following dependencies:
 - Dotenv (https://www.npmjs.com/package/dotenv)
 
 # Information Providers
-- News API (https://newsapi.org/)
+- Json Server API (http://localhost:3000/api/v1)
 - Clearbit Logo API (https://clearbit.com/logo)
 
 # Developer Information
-Developed by Franz Escalante Baygorrea, software engineer and web developer.
+Developed by Franz Escalante Baygorrea, software engineer student and web developer.
 
