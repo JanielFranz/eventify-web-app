@@ -15,6 +15,7 @@ name: "check-in",
   methods: {
   //#region Utility Methods
     validationProcess(attendee) {
+      console.log('the attendee inside the validation process', attendee)
       if(attendee.checkedInAt === null) {
         this.attendeeService.updateCheckedInStatus(attendee.id, new Date().toISOString())
       } else {
@@ -25,8 +26,9 @@ name: "check-in",
   //#region Event Handler
     onValidateTicket(ticketIdentifier) {
       this.attendeeService.getAttendeeByTicketIdentifier(ticketIdentifier).then((response) => {
-        if(response.status === 200) {
-          this.attendee = new Attendee(response.data)
+        if(response.data.length > 0) {
+          this.attendee = new Attendee(response.data[0])
+          console.log('at in event handler',this.attendee)
           this.validationProcess(this.attendee)
         }
         else {
@@ -40,7 +42,7 @@ name: "check-in",
 </script>
 
 <template>
-  <form-check-in @ticket-validated="onValidateTicket"/>
+  <form-check-in @ticket-validated="onValidateTicket($event)"/>
 </template>
 
 <style scoped>
