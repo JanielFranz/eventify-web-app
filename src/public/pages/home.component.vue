@@ -2,7 +2,7 @@
 import {EventService} from "@/public/services/event.service.js";
 import {AttendeesService} from "@/shared/services/attendees.service.js";
 import {Eventt} from "@/public/model/event.entity.js";
-import {Attendee} from "@/registration/model/attendee.entity.js";
+import {Attendee} from "@/shared/model/attendee.entity.js";
 import EventSummaryList from "@/public/components/event-summary-list.component.vue";
 
 export default {

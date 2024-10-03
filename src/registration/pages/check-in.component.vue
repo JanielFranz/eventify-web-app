@@ -1,5 +1,5 @@
 <script>
-import {Attendee} from "@/registration/model/attendee.entity.js";
+import {Attendee} from "@/shared/model/attendee.entity.js";
 import {AttendeesService} from "@/shared/services/attendees.service.js";
 import FormCheckIn from "@/registration/components/form-check-in.component.vue";
 
